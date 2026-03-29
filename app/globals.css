@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* ===== Cool (dark) theme — default ===== */
+:root {
+  --c-bg: #0c0f14;
+  --c-surface: #1e2530;
+  --c-border: rgb(55 65 81 / 0.5);
+  --c-text: #ffffff;
+  --c-text-sub: #6b7280;
+  --c-text-muted: #4b5563;
+  --c-accent: #2dd4bf;
+  --c-accent-hover: #5eead4;
+  --c-accent-fg: #000000;
+  --c-accent-soft: rgb(45 212 191 / 0.1);
+  --c-accent-soft-bd: rgb(45 212 191 / 0.3);
+  --c-orig-label: #fb923c;
+  --c-orig-soft: rgb(249 115 22 / 0.1);
+  --c-orig-bd: rgb(249 115 22 / 0.4);
+  --c-filt-label: #2dd4bf;
+  --c-filt-soft: rgb(45 212 191 / 0.1);
+  --c-filt-bd: rgb(45 212 191 / 0.4);
+  --c-recv-bg: #1e2530;
+  --c-recv-bd: rgb(55 65 81 / 0.5);
+  --c-pulse: #2dd4bf;
+}
+
+/* ===== Warm theme ===== */
+[data-theme="warm"] {
+  --c-bg: #fdf6ee;
+  --c-surface: #fff4e6;
+  --c-border: #e8d5b8;
+  --c-text: #1c1007;
+  --c-text-sub: #78583a;
+  --c-text-muted: #a8865a;
+  --c-accent: #ea580c;
+  --c-accent-hover: #c2410c;
+  --c-accent-fg: #ffffff;
+  --c-accent-soft: rgb(234 88 12 / 0.08);
+  --c-accent-soft-bd: rgb(234 88 12 / 0.3);
+  --c-orig-label: #d97706;
+  --c-orig-soft: rgb(245 158 11 / 0.1);
+  --c-orig-bd: rgb(245 158 11 / 0.4);
+  --c-filt-label: #ea580c;
+  --c-filt-soft: rgb(234 88 12 / 0.08);
+  --c-filt-bd: rgb(234 88 12 / 0.3);
+  --c-recv-bg: #fff9f3;
+  --c-recv-bd: #e8d5b8;
+  --c-pulse: #ea580c;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  /* Semantic color tokens usable as Tailwind utilities (bg-c-bg, text-c-text, etc.) */
+  --color-c-bg: var(--c-bg);
+  --color-c-surface: var(--c-surface);
+  --color-c-text: var(--c-text);
+  --color-c-text-sub: var(--c-text-sub);
+  --color-c-text-muted: var(--c-text-muted);
+  --color-c-accent: var(--c-accent);
+  --color-c-accent-fg: var(--c-accent-fg);
+}
+
+body {
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+html, body { height: 100%; }
+
+/* Accent button helper */
+.btn-accent {
+  background: var(--c-accent);
+  color: var(--c-accent-fg);
+}
+.btn-accent:hover { background: var(--c-accent-hover); }
+.btn-accent:disabled { opacity: 0.4; cursor: not-allowed; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--c-border); border-radius: 2px; }
