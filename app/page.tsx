@@ -60,6 +60,49 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section id="pricing" className="mt-32 w-full max-w-4xl">
+        <h2 className="text-center text-2xl font-bold text-c-text mb-4">料金プラン</h2>
+        <p className="text-center text-sm text-c-text-sub mb-12">まずは無料で体験してください</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div
+            className="rounded-2xl p-6"
+            style={{ border: '1px solid var(--c-border)', background: 'var(--c-surface)' }}
+          >
+            <h3 className="text-base font-bold text-c-text mb-1">Free</h3>
+            <p className="text-3xl font-bold text-c-text mt-2">
+              ¥0<span className="text-sm font-normal text-c-text-sub">/月</span>
+            </p>
+            <ul className="mt-4 space-y-2">
+              <li className="text-sm text-c-text-sub">AIフィルター 月100通まで</li>
+              <li className="text-sm text-c-text-sub">リアルタイムチャット</li>
+              <li className="text-sm text-c-text-sub">招待リンクでルーム作成</li>
+            </ul>
+          </div>
+          <div
+            className="rounded-2xl p-6 relative"
+            style={{ border: '1px solid var(--c-accent)', background: 'var(--c-surface)' }}
+          >
+            <span
+              className="absolute -top-3 left-6 text-xs font-bold px-3 py-1 rounded-full text-c-accent"
+              style={{ background: 'var(--c-accent-soft)', border: '1px solid var(--c-accent-soft-bd)' }}
+            >
+              おすすめ
+            </span>
+            <h3 className="text-base font-bold text-c-text mb-1">Pro</h3>
+            <p className="text-3xl font-bold text-c-text mt-2">
+              ¥500<span className="text-sm font-normal text-c-text-sub">/月（税込）</span>
+            </p>
+            <ul className="mt-4 space-y-2">
+              <li className="text-sm text-c-text-sub">AIフィルター 無制限</li>
+              <li className="text-sm text-c-text-sub">リアルタイムチャット</li>
+              <li className="text-sm text-c-text-sub">招待リンクでルーム作成</li>
+              <li className="text-sm text-c-text-sub">いつでもキャンセル可能</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <div className="mt-20 text-center">
         <p className="text-c-text-muted text-sm mb-4">無料ではじめられます</p>
         <Link
@@ -69,6 +112,26 @@ export default function LandingPage() {
           アカウントを作成
         </Link>
       </div>
+
+      {/* Footer */}
+      <footer className="mt-24 w-full max-w-4xl pb-12" style={{ borderTop: '1px solid var(--c-border)', paddingTop: '24px' }}>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-c-text-muted">&copy; {new Date().getFullYear()} SNS ENTRANCE</p>
+          <div className="flex gap-6">
+            <Link href="/legal" className="text-xs text-c-text-sub hover:text-c-text transition-colors">
+              特定商取引法に基づく表記
+            </Link>
+            <a
+              href="https://ko-fi.com/sns_entrance"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-c-text-sub hover:text-c-text transition-colors"
+            >
+              開発を支援する
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
   )
 }
