@@ -8,10 +8,10 @@ const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin']
 
 export const metadata: Metadata = {
   title: 'SNS ENTRANCE — ビジネスの入り口',
-  description: 'すべてのメッセージにAIフィルターをかけるビジネスチャット。初対面をフラットに。',
+  description: '送信メッセージをAIが自動でビジネス敬語に変換。感情を整理して届けるチャットサービスです。',
   openGraph: {
     title: 'SNS ENTRANCE — ビジネスの入り口',
-    description: 'AIが感情を除去するビジネスチャット。初対面の壁をフラットに越える。',
+    description: '送信メッセージをAIが自動でビジネス敬語に変換。感情を整理して届けるチャットサービスです。',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
     type: 'website',
     locale: 'ja_JP',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'SNS ENTRANCE — ビジネスの入り口',
-    description: 'AIが感情を除去するビジネスチャット。初対面の壁をフラットに越える。',
+    description: '送信メッセージをAIが自動でビジネス敬語に変換。感情を整理して届けるチャットサービスです。',
     images: ['/og-image.png'],
   },
 }
