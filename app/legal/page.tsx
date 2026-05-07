@@ -11,12 +11,10 @@ export default function LegalPage() {
 
       <div className="space-y-6">
         <Section title="販売業者">
-          {/* TODO: あなたの事業者名に変更してください */}
-          川原　暉弘
+          SNS ENTRANCE
         </Section>
 
         <Section title="運営責任者">
-          {/* TODO: あなたの氏名に変更してください */}
           川原　暉弘
         </Section>
 
