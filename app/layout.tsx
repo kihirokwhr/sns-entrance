@@ -7,11 +7,14 @@ const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
 const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://sns-entrance.com'),
   title: 'SNS ENTRANCE — ビジネスの入り口',
   description: '送信メッセージをAIが自動でビジネス敬語に変換。感情を整理して届けるチャットサービスです。',
   openGraph: {
     title: 'SNS ENTRANCE — ビジネスの入り口',
     description: '送信メッセージをAIが自動でビジネス敬語に変換。感情を整理して届けるチャットサービスです。',
+    url: 'https://sns-entrance.com',
+    siteName: 'SNS ENTRANCE',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
     type: 'website',
     locale: 'ja_JP',
