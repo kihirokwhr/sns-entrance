@@ -5,6 +5,7 @@ import { FilterBadge } from '@/components/ui/FilterBadge'
 import { ThemeToggle } from '@/components/ui/ThemeToggle'
 import { CopyInviteButton } from '@/components/ui/CopyInviteButton'
 import { PlanActions } from '@/components/sidebar/PlanActions'
+import { LogoutButton } from '@/components/sidebar/LogoutButton'
 import type { Room } from '@/lib/types'
 
 export default async function LobbyLayout({ children }: { children: React.ReactNode }) {
@@ -53,6 +54,7 @@ export default async function LobbyLayout({ children }: { children: React.ReactN
           <div style={{ borderTop: '1px solid var(--c-border)', paddingTop: '12px' }} className="flex flex-col gap-2">
             <CopyInviteButton userId={user.id} />
             <p className="text-xs text-c-text-sub truncate">{user.email}</p>
+            <LogoutButton />
           </div>
         </div>
       </aside>
