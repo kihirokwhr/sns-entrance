@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 type Props = {
   plan: string
@@ -76,6 +77,14 @@ export function PlanActions({ plan, filterCount, filterResetAt }: Props) {
           </button>
         </div>
       )}
+
+      <Link
+        href="/reset-password"
+        className="flex items-center gap-2 text-xs text-c-text-sub hover:text-c-text transition-colors"
+      >
+        <span>🔑</span>
+        <span>パスワード変更</span>
+      </Link>
 
       <a
         href="https://ko-fi.com/sns_entrance"
