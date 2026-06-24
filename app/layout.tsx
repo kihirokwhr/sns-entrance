@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     images: ['/og-image.png'],
   },
+  verification: {
+    google: 'mQPf_VOnXnR87G9kTvgAKfwz-4DOQGS69XnMfU6j0m0',
+  },
 }
 
 const jsonLd = {
