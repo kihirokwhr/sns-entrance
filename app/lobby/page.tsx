@@ -45,6 +45,12 @@ export default async function LobbyPage() {
           </div>
 
           <CopyInviteButton userId={user!.id} />
+
+          <p className="mt-6 text-sm">
+            <a href="/lobby/convert" className="text-c-accent hover:opacity-80 transition-opacity">
+              ⚡ 相手を待たずに、変換ツールを使ってみる →
+            </a>
+          </p>
         </div>
       </div>
     )

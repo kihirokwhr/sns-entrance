@@ -42,6 +42,16 @@ export default async function LobbyLayout({ children }: { children: React.ReactN
         </div>
 
         <div className="flex-1 overflow-y-auto py-2">
+          <div className="px-2 pb-2" style={{ borderBottom: '1px solid var(--c-border)' }}>
+            <a
+              href="/lobby/convert"
+              className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold text-c-accent hover:opacity-80 transition-opacity"
+              style={{ background: 'var(--c-accent-soft)' }}
+            >
+              <span>⚡</span>
+              <span>変換ツール</span>
+            </a>
+          </div>
           <RoomList rooms={(rooms ?? []) as Room[]} currentUserId={user.id} />
         </div>
 
